@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<title>Jquery home Page</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function()
+{
+    $("button").on("click",function()
+    {
+       
+       var div = $(".boxes");
+        div.addClass("active");
+
+       div.animate({ top:'300px' } );
+       div.animate({ left:'300px'});
+
+       
+      
+       div.animate({ top:'120px'  });
+    
+       
+       div.animate({ left:'10px'   });
+      
+
+        
+    });
+    
+
+
+
+});
+
+
+
+</script>
+
+
+<style>
+    .section
+    {
+       
+        width: 400px;
+        height: 300px;
+       
+        display: block;
+        overflow: hidden;
+       background-color: lightblue;
+       
+       
+        
+    }
+    .boxes
+    {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      top: 120px;
+      left: 10px;
+
+      background-image: linear-gradient(red, blue , green);
+      margin: 0;
+      position: absolute;
+     
+    }
+    .active
+    {
+        animation: rotation 300ms 6 ease-in;
+    }
+    @keyframes rotation 
+    {
+        form
+        {
+            transform: rotate(0deg);
+        }
+        to 
+        {
+            transform:rotate(360deg);
+        }
+    }
+
+
+</style>
+
+</head>
+
+<body>
+
+
+    <h1>Find Me on LinkedIn</h1>
+    <p>@playshaban</p>
+     
+    <div class="section">
+        <div class="boxes">
+
+        </div>
+       
+    </div>
+    <button> jag Ghumiyaa , Thare jaisa na koi </button>
+
+
+</body>
